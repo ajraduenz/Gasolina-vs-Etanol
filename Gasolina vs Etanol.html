@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="scriptGrafico.js"></script>
+    <link rel="stylesheet" href="Estilo.css">
+
+</head>
+
+<body>
+    <ul>
+        <li><a href="https://github.com/ajraduenz">GitHub</a></li>
+        <li><a href="mailto:aldoraduenzjunior@gmail.com">Duvidas ou Sugestões</a></li>
+    </ul>
+    <div class="esq">
+        <form class="formulario" id="formulario">
+            <label class="col-form-label">Km/litro Gasolina</label>
+            <div class="col-sm-6 input-column"><input class="form-control" type="number" id="KmlitroGasolina">
+            </div>
+
+            <label class="col-form-label">Km/litro Etanol</label>
+            <div class="col-sm-6 input-column"><input class="form-control" type="number" id="KmlitroEtanol"></div>
+
+            <label class="col-form-label">Preço Gasolina</label>
+            <div class="col-sm-6 input-column"><input class="form-control" type="number" id="PreçoGasolina"></div>
+
+            <label class="col-form-label">Preço Etanol</label>
+            <div class="col-sm-6 input-column"><input class="form-control" type="number" id="PreçoEtanol"></div>
+
+            <label class="col-form-label">Quilometragem Diária</label>
+            <div class="col-sm-6 input-column"><input class="form-control" type="number" id="QuilometragemDiaria">
+            </div>
+
+            <label class="col-form-label">Dias a Calcular</label>
+            <div class="col-sm-6 input-column"><input class="form-control" type="number" id="DiasCalcular"></div>
+
+            <p><button class="submit-button" type="button" onclick="Calcular()"><b>Calcular</b></button>
+            </p>
+            <p id="botaozerar"><button class="submit-button" type="button"
+                    onclick="Zerar()"><b>Zerar</b></button>
+            </p>
+        </form>
+    </div>
+    <div class="dir">
+        <div id="curve_chart1" class="posicaoGrafico"></div>
+        <div class="resultados" id="textoFinalComparacao1" div></div>
+        <div id="curve_chart2" class="posicaoGrafico"></div>
+        <div class="resultados" id="textoFinalComparacao2" div></div>
+    </div>
+
+</body>
+
+</html>
